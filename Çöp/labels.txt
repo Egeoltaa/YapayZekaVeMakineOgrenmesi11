@@ -1,0 +1,6 @@
+0 karton
+1 plastik
+2 çöp
+3 kağıt
+4 cam
+5 metal
