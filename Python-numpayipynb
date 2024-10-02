@@ -1,0 +1,740 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Egeoltaa/Yapayzeka/blob/main/Python-numpayipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n"
+      ],
+      "metadata": {
+        "id": "WX_Gw0fRFbY3"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#1) (10,15,30,45,60) değerlerine sahip numpy dizisi oluştur"
+      ],
+      "metadata": {
+        "id": "TBw9SSBdHF__"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.array([10,15,30,45,60])\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tuoLo0iEGsSC",
+        "outputId": "fdcea2ca-c1ca-45b4-93ef-bc27d54c6d96"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([10, 15, 30, 45, 60])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 2) 5-15 arasındaki sayılarla bir diz oluştur."
+      ],
+      "metadata": {
+        "id": "b4_YvBxHHZhn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.arange(5,15)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sH1FZrKeHgO5",
+        "outputId": "d9a3ed77-498f-4f0b-be2d-a2a61eae367a"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([ 5,  6,  7,  8,  9, 10, 11, 12, 13, 14])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#3 ) 50-100 arasında 5 er 5 er bir dizi oluştur"
+      ],
+      "metadata": {
+        "id": "UOAXvXiaHzif"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.arange(50,100,5)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wSeRwaabH8u_",
+        "outputId": "b2141345-deb3-494f-9ead-53b7cf4ee900"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([50, 55, 60, 65, 70, 75, 80, 85, 90, 95])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#4) 10 elemanlı sıfırlardan oluşan bir dizi oluştur\n",
+        "\n",
+        "---\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ifmVjWKBIKXv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.zeros(10)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Okj1k36XJfwX",
+        "outputId": "758acfbf-2bb9-45f9-bb1a-855394ce7ba4"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#5) 10 elemanlı birlerden oluşan bir dizi oluştur"
+      ],
+      "metadata": {
+        "id": "kmnjNLC4JnJN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.ones(10)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oZ1OejDtJsmF",
+        "outputId": "f2bf846f-219b-4d9b-fe2e-28eebd4e0023"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#6) 0 ile 100 arasında eşit aralıklı 5 sayı üretin"
+      ],
+      "metadata": {
+        "id": "oilmrIKwJvgV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.linspace(0,100,5)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QcD30oyvJ4qW",
+        "outputId": "78e487ff-7712-4610-bddb-a240f2e9eb63"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([  0.,  25.,  50.,  75., 100.])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#7) 10 ile 30 arasında rastgele 5 tam sayı oluştur"
+      ],
+      "metadata": {
+        "id": "D3QaWM3EJ7hV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.random.randint(10,30,5)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0Jl_5i0oKD5e",
+        "outputId": "94f9fc62-c84b-43da-d4ba-3308e3361b6a"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([22, 13, 13, 16, 26])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#8) -1 ile 1 arsında 10 adet sayı üret"
+      ],
+      "metadata": {
+        "id": "JMyLREXKKGde"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.random.randn(10)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xU4iM_VdKNWC",
+        "outputId": "e35b9185-02ca-43ed-f9f2-61a1754085bf"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([-1.03413443e+00, -6.65100378e-04, -7.55547991e-02,  1.43681481e+00,\n",
+              "       -6.41611938e-01,  2.43192355e-01, -2.24733523e-01, -2.35261475e-01,\n",
+              "       -1.84336346e+00, -3.51725234e-01])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#9) 3x5 boyutlarında 10 ile 50 arasında rastgele bir matris oluştur"
+      ],
+      "metadata": {
+        "id": "tvXodUReKR9v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.random.randint(10,50,15).reshape(3,5)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JFcEIKqKKb0N",
+        "outputId": "3e84db14-9f2a-419a-a8fb-d4c1c93c49c6"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[19, 24, 32, 12, 46],\n",
+              "       [21, 12, 26, 31, 31],\n",
+              "       [13, 27, 34, 12, 41]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#10) Üretilen matrisin satır ve sütün sayılarının toplamlarını hesapla"
+      ],
+      "metadata": {
+        "id": "QVgNEvPwKd8u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "matris=np.random.randint(10,50,15).reshape(3,5)\n",
+        "satir=np.sum(matris,axis=1)\n",
+        "sutun=np.sum(matris,axis=0)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HuMzmwZKKoE2",
+        "outputId": "a3d6bf10-65f3-4647-cb17-48ee16db5a6b"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[17, 29, 13, 45, 16],\n",
+              "       [47, 27, 42, 10, 42],\n",
+              "       [46, 37, 22, 15, 24]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yf3nSQscMsAs"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#11) Üretilen matrisin en büyük ve en küçük ve ortalaması nedir?"
+      ],
+      "metadata": {
+        "id": "ydzAOFmhLHre"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.random.randint(10,50,15).reshape(3,5)\n",
+        "enBuyuk=np.max(result)\n",
+        "enKucuk=np.min(result)\n",
+        "ortalama=np.mean(result)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4uF-Z1IuLXPu",
+        "outputId": "35a382e6-2533-4e33-cb59-08f58b540cbc"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[17, 29, 13, 45, 16],\n",
+              "       [47, 27, 42, 10, 42],\n",
+              "       [46, 37, 22, 15, 24]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#12) Üretilen matrisin en büyük değerinin indeksi kaçtır ="
+      ],
+      "metadata": {
+        "id": "Mya_-bXILcA9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=matris.argmax()\n",
+        "result=matris.argmin()\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KO8gtl99Lltu",
+        "outputId": "8489b616-5914-4a14-8b4b-9faf5fee14df"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#13) 10 ile 20 arasındaki sayıları içeren dizinin ilk 3 elemanını seçiniz"
+      ],
+      "metadata": {
+        "id": "y4ptyVrjL-T2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.arange(10,20)[0:3]\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BglpI1JYMK03",
+        "outputId": "0ee33977-23ec-4d5a-d20a-85d0ad739a93"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([10, 11, 12])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "X1rbeXSxMTIF"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#14) Üretilen dizinin elemanlarını tersten yazdır"
+      ],
+      "metadata": {
+        "id": "-pxRyZl6MtrV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.arange(10,20)[::-1]\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ivINmm9tM0qt",
+        "outputId": "20889afd-1c8a-433f-da16-4ece8b4ebd8b"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([19, 18, 17, 16, 15, 14, 13, 12, 11, 10])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#15) Üretilen matrisin ilk satırnını seçiniz"
+      ],
+      "metadata": {
+        "id": "Fve39QqrM2Zl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=matris[0]\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "neaM9t0nM-Au",
+        "outputId": "534084b7-e83b-46a5-ce04-f5857aac3039"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([39, 27, 36, 12, 45])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#16) Üretilien matrisin  2.satır 3.sütündaki elemanı hangisidir"
+      ],
+      "metadata": {
+        "id": "6Hdq6n-6NIk1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=matris[1,2]"
+      ],
+      "metadata": {
+        "id": "fSyg3j9eNS3V"
+      },
+      "execution_count": 36,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#17) Üretilen matrisin tüm satırlardaki ilk elemanı çiziniz"
+      ],
+      "metadata": {
+        "id": "rTriZx5lNWQl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=matris[:,0]\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DpQBnzFdNez1",
+        "outputId": "d086daff-b1d0-4ce1-ba22-273a63ce7d90"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([39, 15, 23])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#18) Üretilen matrisin  her bir elemanının karesini alınız"
+      ],
+      "metadata": {
+        "id": "MVJIPIWgNg21"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=np.square(matris)\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LaCHsF6tNsZt",
+        "outputId": "58db3daa-a4ba-4296-9a7a-16a2fe0a044c"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[1521,  729, 1296,  144, 2025],\n",
+              "       [ 225, 1764, 1521,  256,  361],\n",
+              "       [ 529,  324,  100,  196,  729]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#19) Üretilen matris elemanlarının hangisi pozitif çift sayıdır?"
+      ],
+      "metadata": {
+        "id": "pJdQsjM3NvBt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result=matris[matris%2==0]\n",
+        "result"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TYjrRRoMN5vm",
+        "outputId": "66448bc8-69f2-4727-a2dd-4939ed2a3351"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([36, 12, 42, 16, 18, 10, 14])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Colaboratory'ye Hoş Geldiniz",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
